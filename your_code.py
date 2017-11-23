@@ -1,11 +1,8 @@
 import numpy as np
 import pandas  as pd
-import pickle
 
-pickle_in = open('txfuture_updated.pickle', 'rb')
+df = pd.read_csv('dailyinfo.csv', index_cols='date_')
 
-df = pickle.load(pickle_in)
-
-print (df)
+print (df.tail())
 
 ######## your code start from here ########
